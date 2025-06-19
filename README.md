@@ -132,10 +132,4 @@ MIT License. See `LICENSE` file for details.
 
 Pull requests, bug reports, and suggestions are welcome! Fork the repository and help improve this CLI toolkit.
 
----
-
-**Note:** This README is generated as part of the `docs` effort and should be included in the project root directory as `README.md`.
-
----
-
 Crafted with ❤️ using Python.
