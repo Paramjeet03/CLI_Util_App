@@ -86,4 +86,8 @@ class Main_menu:
             t.case_converter(text,case_u_l)
         elif option == "3":
             t.reverse_text(text)
+
+if __name__ == "__main__":
+    main()
+
             
