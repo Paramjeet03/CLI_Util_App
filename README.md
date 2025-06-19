@@ -9,9 +9,10 @@ A robust and beginner-friendly **Command Line Interface (CLI)** Python utility a
 * **Prime Number Checker** – Verify if a number is prime.
 * **Factorial Calculator** – Compute factorial of a given number.
 * **Palindrome Checker** – Determine whether a string or number is a palindrome.
+* **Text Utilities** – Perform string operations like reverse, count, etc.
 * **File Operations** – Read/write files with custom content.
 * **Simple CLI Menu Navigation** – Intuitive numbered menu for operation selection.
-* **Log Tracking** – Keeps log of operations performed (`app.log`).
+* **Log Tracking** – Keeps log of operations performed (`Log.txt`).
 * **Clean Modular Code** – Organized into reusable functions and methods.
 * **Colorful Output** – Uses `colorama` for enhanced readability.
 
@@ -35,7 +36,7 @@ pip install -r requirements.txt
 ### 3. Run the app
 
 ```bash
-python app.py
+python Main.py
 ```
 
 ---
@@ -44,14 +45,14 @@ python app.py
 
 ```
 Utility_CLI_App/
-├── utils/
-│   ├── math_utils.py         # Prime, factorial, palindrome
-│   ├── file_utils.py         # File reading/writing
-├── logs/
-│   └── app.log               # Application logs
-├── app.py                    # Main CLI logic
-├── requirements.txt          # Required packages
-└── README.md                 # Project documentation
+├── Images/                   # Screenshots or visual assets
+├── __pycache__/             # Compiled cache files
+├── File_operation.py        # File read/write operations
+├── Log.txt                  # Operation logs
+├── Main.py                  # Main application file
+├── Math_utility.py          # Prime, factorial functions
+├── Text_Utilities.py        # Text-based operations
+├── README.md                # Project documentation
 ```
 
 ---
@@ -67,7 +68,8 @@ Welcome to the Utility CLI App
 2. 🧮 Calculate Factorial
 3. 🔁 Check Palindrome
 4. 📁 File Operations
-5. ❌ Exit
+5. ✏️ Text Utilities
+6. ❌ Exit
 ```
 
 ---
@@ -105,17 +107,18 @@ pip install -r requirements.txt
 ## 🧑‍💻 Developer Notes
 
 * Input is stripped and validated to prevent common errors.
-* Easy to expand by adding new functions in `utils/` folder.
-* Menu entries are loop-based and provide graceful exit options.
+* Easy to expand by adding new modules or enhancing existing ones.
+* Graceful exit and user-friendly instructions are embedded in the flow.
 
 ---
 
 ## 📌 To-Do / Future Enhancements
 
 * Add temperature converter utility
-* Add calculator for basic arithmetic
-* Add datetime utilities (e.g. age calculator, date diff)
-* Multi-language support
+* Add basic calculator operations
+* Add date utilities (e.g. age calculator)
+* Add image-based operations
+* Integrate quiz game as sub-feature
 
 ---
 
