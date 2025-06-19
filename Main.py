@@ -48,6 +48,7 @@ class Main_menu:
 
             if option_f == "4":
                 print("🔙 Returning to Main Menu...\n")
+                self.Welcome()
 
             f = FileOperation()
             f.set_path()
@@ -74,8 +75,9 @@ class Main_menu:
         while option not in ["1", "2", "3", "4", "5"]:
             option = input("Enter a valid option (1/2/3/4/5): ").strip()
 
-        if option == "5":
+        if option == "4":
             print("🔙 Returning to Main Menu...\n")
+            self.Welcome()
         t = Text_Util()
         text = input("Enter your text: ")
 
@@ -87,7 +89,46 @@ class Main_menu:
         elif option == "3":
             t.reverse_text(text)
 
+
+    def Math_wale_kaam(self):
+        print("=" * 60)
+        print("🧮 MATH OPERATIONS MENU".center(60))
+        print("=" * 60)
+        print("  1. Factorial")
+        print("  2. Prime Check")
+        print("  3. Calculator")
+        print("  4. 🔙 Return to Main Menu")
+        print("-" * 60)
+        m=Math_util()
+
+        option_M = input("Enter your choice (1-4): ").strip()
+        while option_M not in ["1", "2", "3", "4"]:
+            option_M = input("Enter a valid option (1/2/3/4): ").strip()
+
+        if option_M == "4":
+            print("🔙 Returning to Main Menu...\n")
+            self.Welcome()
+
+        if option_M == "1":
+            n = int(input("Enter a number: "))
+            result = m.factorial(n)
+            print(f"✅ Factorial of {n} is: {result}")
+
+        elif option_M == "2":
+            n = int(input("Enter a number: "))
+            result = m.is_prime(n)
+            print(f"✅ Is {n} a prime number? {'Yes' if result else 'No'}")
+
+        elif option_M == "3":
+            n1 = float(input("Enter 1st number: "))
+            n2 = float(input("Enter 2nd number: "))
+            op = input("Enter operator (+, -, *, /): ").strip()
+            result = m.calculator(n1, n2, op)
+            print(f"✅ Result: {result}")
+
+
 if __name__ == "__main__":
-    main()
+   app= Main_menu()
+   app.Welcome()
 
             
